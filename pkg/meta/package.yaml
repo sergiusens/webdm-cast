@@ -1,0 +1,14 @@
+name: webdm
+vendor: Sergio Schvezov <sergio.schvezov@canonical.com>
+icon: meta/clap.png
+source: lp:webdm
+description: Manage a system with a snappy webui
+version: 0.4
+type: framework
+architecture: UNKNOWN_ARCH
+services:
+    - name: avahi
+      start: metabin
+      description: Avahi daemon
+      caps:
+          - networking
