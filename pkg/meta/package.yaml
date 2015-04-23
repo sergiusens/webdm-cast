@@ -10,5 +10,6 @@ services:
     - name: avahi
       start: metabin
       description: Avahi daemon
-      caps:
-          - networking
+      security-policy:
+          apparmor: meta/avahi.profile
+          seccomp: meta/avahi.seccomp
