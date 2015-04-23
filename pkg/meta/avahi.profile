@@ -23,4 +23,16 @@
   /var/lib/apps/@{APP_PKGNAME}/@{APP_VERSION}/   w,
   /var/lib/apps/@{APP_PKGNAME}/@{APP_VERSION}/** wl,
 
+  # magic script
+  /bin/uname Uxr,
+  /usr/bin/basename Uxr,
+  /usr/bin/realpath Uxr,
+  /usr/bin/dirname Uxr,
+  /bin/dash Uxr,
+  /bin/sed Uxr,
+
+  # metabin
+  /proc/sys/kernel/hostname r,
+  /proc/sys/kernel/somaxconn r,
   capability net_admin,
+}
